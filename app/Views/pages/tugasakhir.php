@@ -17,7 +17,7 @@
                 untuk seluruh mahasiswa/i Bojonegoro yang menempuh sedang menyelesaikan 
                 tugas akhir.
                 </p>
-                <a href="/pkl/public/form3", class="btn btn-primary d-none d-lg-block">Daftar</a>
+                <a href= <?= base_url("/formtugak"); ?> class="btn btn-primary d-none d-lg-block">Daftar</a>
             </div>
             <div class="col-lg-6 text-center text-lg-end">
                 <img class="img-fluid py-5" src="<?= base_url("img/ta.svg"); ?>" alt="" />

@@ -36,6 +36,11 @@ $routes->get('/adminduasarjana/index', 'AdminDuasarjana::index', ['filter' => 'r
 $routes->get('/duasarjana', 'HomeDuasarjana::index');
 $routes->get('/scientist', 'HomeScientist::index');
 $routes->get('/tugasakhir', 'HomeTugasakhir::index');
+
+$routes->get('/formscientist', 'Form::index');
+$routes->get('/formdusar', 'Form2::index');
+$routes->get('/formtugak', 'Form3::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

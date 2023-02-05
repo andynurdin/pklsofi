@@ -18,7 +18,11 @@
                     pada semua jurusan diluar program
                     beasiswa scientist.
                 </p>
-                <a href= <?= base_url("/formdusar"); ?> class="btn btn-primary d-none d-lg-block">Daftar</a>
+                <?php if (in_groups('admin')) : ?>
+                    <a href="<?= base_url('/adminduasarjana') ?>" , class="btn btn-primary d-none d-lg-block">Admin</a>
+                <?php else : ?>
+                    <a href="<?= base_url('/login') ?>" class="btn btn-primary d-none d-lg-block">Daftar</a>
+                <?php endif; ?>
             </div>
             <div class="col-lg-6 text-center text-lg-end">
                 <img class="img-fluid py-5" src="<?= base_url("img/ds.svg"); ?>" alt="" />

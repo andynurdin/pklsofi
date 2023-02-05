@@ -18,7 +18,7 @@
                 pada Perguruan Tinggi Negeri dengan jurusan dan program 
                 studi scientist. 
                 </p>
-                <a href="/pkl/public/form", class="btn btn-primary d-none d-lg-block">Daftar</a>
+                <a href= <?= base_url("/formscientist"); ?> class="btn btn-primary d-none d-lg-block">Daftar</a>
             </div>
             <div class="col-lg-6 text-center text-lg-end">
                 <img class="img-fluid py-5" src="<?= base_url("img/scientist.svg"); ?>" alt="" />
