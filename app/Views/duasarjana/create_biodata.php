@@ -233,13 +233,6 @@
             </tr>
             <tr>
                 <td width="200px">
-                    <p>Email</p>
-                </td>
-                <td>:</td>
-                <td><input type="email" placeholder="Email" required name="emailku"></td>
-            </tr>
-            <tr>
-                <td width="200px">
                     <p>No. Handphone</p>
                 </td>
                 <td>:</td>
@@ -247,17 +240,10 @@
             </tr>
             <tr>
                 <td width="200px">
-                    <p>Pas Foto (3x4) </p>
-                </td>
-                <td>:</td>
-                <td><input type="file" required name="fotoku"></td>
-            </tr>
-            <tr>
-                <td width="200px">
                     <p>Kartu</p>
                 </td>
                 <td>:</td>
-                <td><select required name="kartuku">
+                <td><select required name="jeniskartuku">
                         <option selected disabled align="center"> --- Pilih Kartu ---</option>
                         <option>KPM (Kartu Petani Mandiri)</option>
                         <option>KIP (Kartu Indonesia Pintar)</option>
@@ -313,19 +299,6 @@
                 <td><input type="text" placeholder="NIM" required name="nimku"></td>
             <tr>
                 <td width="200px">
-                    <p>Tahun Masuk Kuliah</p>
-                </td>
-                <td>:</td>
-                <td><input type="number" placeholder="Tahun Masuk Kuliah" required name="thnku"></td>
-            </tr>
-            <td width="200px">
-                <p>Jalur Masuk Kuliah</p>
-            </td>
-            <td>:</td>
-            <td><input type="text" placeholder="Jalur Masuk Kuliah" required name="jalurku"></td>
-            </tr>
-            <tr>
-                <td width="200px">
                     <p>Fakultas</p>
                 </td>
                 <td>:</td>
@@ -343,17 +316,78 @@
             <td>:</td>
             <td><input type="text" placeholder="A / B" required name="akreditasipku"></td>
             </tr>
-            <td width="200px">
-                <p>Semester</p>
-            </td>
-            <td>:</td>
-            <td><input type="number" placeholder="Semester" required name="smsku"></td>
+            <tr>
+                <td width="200px">
+                    <p>Semester</p>
+                </td>
+                <td>:</td>
+                <td><select required name="smsku">
+                        <option selected disabled align="center"> --- Pilih Semester ---</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select></td>
             </tr>
+            <tr>
             <td width="200px">
-                <p>IPK</p>
+                <p>IPS Semester 1</p>
             </td>
             <td>:</td>
-            <td><input type="number" placeholder="contoh : 3.8" required name="ipkku"></td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips1ku"></td>
+            </tr>
+            <tr>
+            <td width="200px">
+                <p>IPS Semester 2</p>
+            </td>
+            <td>:</td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips2ku"></td>
+            </tr>
+            <tr>
+            <td width="200px">
+                <p>IPS Semester 3</p>
+            </td>
+            <td>:</td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips3ku"></td>
+            </tr>
+            <tr>
+            <td width="200px">
+                <p>IPS Semester 4</p>
+            </td>
+            <td>:</td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips4ku"></td>
+            </tr>
+            <tr>
+            <td width="200px">
+                <p>IPS Semester 5</p>
+            </td>
+            <td>:</td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips5ku"></td>
+            </tr>
+            <tr>
+            <td width="200px">
+                <p>IPS Semester 6</p>
+            </td>
+            <td>:</td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips6ku"></td>
+            </tr>
+            <tr>
+            <td width="200px">
+                <p>IPS Semester 7</p>
+            </td>
+            <td>:</td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips7ku"></td>
+            </tr>
+            <tr>
+            <td width="200px">
+                <p>IPS Semester 8</p>
+            </td>
+            <td>:</td>
+            <td><input type="text" placeholder="contoh : 3.8" required name="ips8ku"></td>
             </tr>
             <td width="200px">
                 <p>UKT Sebelumnya</p>
