@@ -17,7 +17,9 @@ class AdminDuasarjana extends BaseController
     public function index()
     {
         return view('admin/admindusar', [
-            "title" => "Dua Sarjana Per Desa"
+            "title" => "Dua Sarjana Per Desa",
+            "duasarjana" => $this->duasarjana->findAll()
+
         ]);
     }
     public function detail($id_daftar)

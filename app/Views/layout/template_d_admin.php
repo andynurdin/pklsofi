@@ -50,17 +50,17 @@
                 <div class="pt-2">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link <?= $title === 'User' ? 'bg-primary text-white' : 'active' ?>" href="<?= base_url("admin"); ?>">
+                            <a class="nav-link <?= $title === 'User' ? 'bg-primary text-white' : 'active' ?>" href="<?= base_url("adminscientist"); ?>">
                                 <i class="bi bi-journals fs-4"></i> Scientist
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= $title === 'Kelas' ? 'bg-primary text-white' : 'active' ?>" href="<?= base_url("duasarjanahasil"); ?>">
+                            <a class="nav-link <?= $title === 'Kelas' ? 'bg-primary text-white' : 'active' ?>" href="<?= base_url("adminduasarjana"); ?>">
                                 <i class="bi bi-journals fs-4"></i> Dua Sarjana Per Desa
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= $title === 'Bab' ? 'bg-primary text-white' : 'active' ?>" href="<?= base_url("tugasakhirhasil"); ?>">
+                            <a class="nav-link <?= $title === 'Bab' ? 'bg-primary text-white' : 'active' ?>" href="<?= base_url("admintugasakhir"); ?>">
                                 <i class="bi bi-journals fs-4"></i> Bantuan Tugas Akhir
                             </a>
                         </li>

@@ -35,7 +35,7 @@ $routes->get('/adminduasarjana/index', 'AdminDuasarjana::index', ['filter' => 'r
 
 $routes->get('/adminscientist', 'AdminScientist::index', ['filter' => 'role:admin']);
 $routes->get('/admindusar', 'AdminScientist::index', ['filter' => 'role:admin']);
-$routes->get('/admintugak', 'AdminScientist::index', ['filter' => 'role:admin']);
+$routes->get('/admintugasakhir', 'AdminTugasAkhir::index', ['filter' => 'role:admin']);
 
 $routes->get('/duasarjana', 'HomeDuasarjana::index');
 $routes->get('/scientist', 'HomeScientist::index');

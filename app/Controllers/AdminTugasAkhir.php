@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\TugasakhirModel;
 
-class Tugasakhir extends BaseController
+class AdminTugasAkhir extends BaseController
 {
 
     protected $tugasakhir;
