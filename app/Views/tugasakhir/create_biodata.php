@@ -144,43 +144,6 @@
                 <td><input type="text" placeholder="NIK" required name="nikku"></td>  
             </tr>
             <tr>
-                <td width="200px"><p>Tempat Lahir</p></td>
-                <td>:</td>
-                <td><input type="text" placeholder="Tempat Lahir" required name="tlku"></td>
-                <!-- <td width="200px"><p>Provinsi</p></td>
-                <td>:</td>
-                <td><input type="text" placeholder="Provinsi" required></td> -->
-            </tr>
-            <tr>
-                <td width="200px"><p>Tanggal Lahir</p></td>
-                <td>:</td>
-                <td><input type="date" placeholder="Tanggal Lahir" required name="tglku"></td>
-                <!-- <td width="200px"><p>Kabupaten/Kota</p></td>
-                <td>:</td>
-                <td><input type="text" placeholder="Kabupaten/Kota" required></td> -->
-            </tr>
-            <tr>
-                <td width="200px"><p>Jenis Kelamin</p></td>
-                <td>:</td>
-                <td><select required name="jkku">
-                    <option selected disabled align="center"> --- Pilih Gender ---</option>
-                    <option>Laki-Laki</option>
-                    <option>Perempuan</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td width="200px"><p>Agama</p></td>
-                <td>:</td>
-                <td><select required name="agamaku">
-                    <option selected disabled align="center"> --- Pilih Agama ---</option>
-                    <option>Islam</option>
-                    <option>Kristen</option>
-                    <option>Hindu</option>
-                    <option>Budha</option>
-                    <option>Khonghucu</option>
-                </select></td>
-            </tr>
-            <tr>
                 <td width="200px"><p>Alamat</p></td>
                 <td>:</td>
                 <td><textarea cols="39" rows="3" placeholder="Alamat" required name="alamatku"></textarea></td>
@@ -222,24 +185,10 @@
                     </select></td>
             </tr>
             <tr>
-                <td width="200px"><p>Email</p></td>
-                <td>:</td>
-                <td><input type="email" placeholder="Email" required name="emailku"></td>
-            </tr>
-            <tr>
                 <td width="200px"><p>No. Handphone</p></td>
                 <td>:</td>
                 <td><input type="text" placeholder="No. Handphone" required name="hpku"></td>
             </tr>
-            <tr>
-                <td width="200px"><p>Pas Foto (3x4)  </p></td>
-                <td>:</td>
-                <td><input type="file" required name="fotoku"></td>
-            </tr>
-            <tr></tr>
-            <!-- <tr>
-                <td colspan="3" align="right" ><input type="submit" value="SIMPAN">&nbsp&nbsp<input type="reset" value="RESET" ></td>
-            </tr> -->
         </table>
 
         <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
@@ -286,15 +235,6 @@
             <td width="200px"><p>NIM</p></td>
                 <td>:</td>
                 <td><input type="text" placeholder="NIM" required name ="nimku"></td>
-            <tr>
-            <td width="200px"><p>Tahun Masuk Kuliah</p></td>
-                <td>:</td>
-                <td><input type="number" placeholder="Tahun Masuk Kuliah" required name ="thnku"></td>
-            </tr>
-            <td width="200px"><p>Jalur Masuk Kuliah</p></td>
-                <td>:</td>
-                <td><input type="text" placeholder="Jalur Masuk Kuliah" required name ="jalurku"></td>
-            </tr>
             <tr>
             <td width="200px"><p>Fakultas</p></td>
                 <td>:</td>
