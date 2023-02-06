@@ -7,11 +7,11 @@ use CodeIgniter\Model;
 class TugasakhirModel extends Model
 {
     protected $table = "tugasakhir";
-    protected $primaryKey = "id_daftar";
+    protected $primaryKey = "id";
     protected $returnType = "object";
     protected $useAutoIncrement = true;
-    protected $allowedFields = ["nik","nama","nokk", "tempatLahir",	"tanggalLahir",	"gender", "alamat", "agama", "foto",
-    "universitas", "fakultas", "prodi", "semester", "jalur", "tahun", "email", "noHP", "nim",
+    protected $allowedFields = ["id","nik","nama","nokk", "alamat",
+    "universitas", "fakultas", "prodi", "semester", "noHP", "nim",
     "kk","kepalakel","supermohon","suketaktif","suketta","ktm","kpm","sktm","kkku","ktp","supertidakbeasiswa","rekening"
     ,"status","catatan","kelengkapan"
 ];
