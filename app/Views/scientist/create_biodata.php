@@ -217,9 +217,22 @@
                 <td>:</td>
                 <td><input type="text" placeholder="Prodi" required name ="prodiku"></td>
             </tr>
-            <td width="200px"><p>Semester</p></td>
+            <tr>
+                <td width="200px">
+                    <p>Semester</p>
+                </td>
                 <td>:</td>
-                <td><input type="number" placeholder="Semester" required name ="smsku"></td>
+                <td><select required name="smsku">
+                        <option selected disabled align="center"> --- Pilih Semester ---</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select></td>
             </tr>
             <tr>
             <td width="200px"><p>IPS Semester 1</p></td>

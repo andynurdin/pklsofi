@@ -23,7 +23,7 @@
                     <li class="nav-item"><a href="/sipm/public/admin/setting" class="nav-link text-black"><i class=" bi bi-gear fs-5"></i></a></li> -->
                     <li class="nav-item dropdown">
                         <a href="/" class="nav-link text-black dropdown-toggle" id=" navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-person-circle fs-5">&nbsp</i>Zilvi Azus</i>
+                             <i class="bi bi-person-circle fs-5">&nbsp</i><?= user()->username; ?></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <!-- <li><a class="dropdown-item" href="<?= base_url("admin/index"); ?>"><i class="bi bi-layout-text-sidebar-reverse"></i> My

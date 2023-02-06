@@ -26,7 +26,7 @@
                     <li class="nav-item"><a href="/login" class="nav-link text-black"><i class=" bi bi-gear fs-5"></i></a></li> -->
                     <li class="nav-item dropdown">
                         <a href="/" class="nav-link text-black dropdown-toggle" id=" navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-person-circle fs-5">&nbsp</i>Shofiyyatul</i>
+                            <i class="bi bi-person-circle fs-5">&nbsp</i><?= user()->username; ?></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <hr class="dropdown-divider">

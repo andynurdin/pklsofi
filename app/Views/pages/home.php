@@ -40,7 +40,7 @@
                 <img class="img-fluid pb-1" style="height: 200px;" src="<?= base_url("img/ds.svg"); ?>" alt="" />
                 <div class="container-fluid">
                     <div class="container">
-                        <a href="/duasarjana" class="btn btn-secondary mt-3 mb-4"><i></i>Beasiswa Dua Sarjana Per Desa</a>
+                    <a href=<?= base_url("/duasarjana"); ?> class="btn btn-secondary mt-3 mb-4"><i></i>Beasiswa Dua Sarjana Per Desa</a>
                         </button>
                         <?= $this->renderSection('content'); ?>
                     </div>
@@ -71,7 +71,7 @@
                 <img class="img-fluid pb-1" style="height: 200px;" src="<?= base_url("img/ta.svg"); ?>" alt="" />
                 <div class="container-fluid">
                     <div class="container">
-                        <a href="/tugasakhir" class="btn btn-secondary mt-3 mb-4"><i></i>Beasiswa Bantuan Tugas Akhir </a>
+                    <a href=<?= base_url("/tugasakhir"); ?> class="btn btn-secondary mt-3 mb-4"><i></i>Beasiswa Bantuan Tugas Akhir </a>
                         <?= $this->renderSection('content'); ?>
                     </div>
                 </div>
