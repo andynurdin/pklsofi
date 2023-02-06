@@ -123,7 +123,7 @@
 </head>
 
 <body>
-    <form action="<?= base_url('form/save')?>" method="post">
+    <form action="<?= base_url('save')?>" method="post">
         <br>
         <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
             <tr>

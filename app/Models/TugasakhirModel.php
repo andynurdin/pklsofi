@@ -12,7 +12,7 @@ class TugasakhirModel extends Model
     protected $useAutoIncrement = true;
     protected $allowedFields = ["id","nik","nama","nokk", "alamat",
     "universitas", "fakultas", "prodi", "semester", "noHP", "nim",
-    "kk","kepalakel","supermohon","suketaktif","suketta","ktm","kpm","sktm","kkku","ktp","supertidakbeasiswa","rekening"
+    "kk","kepalakel","supermohon","suketaktif","suketta","ktm","kpm","sktm","kk","ktp","supertidakbeasiswa","rekening"
     ,"status","catatan","kelengkapan"
 ];
 }

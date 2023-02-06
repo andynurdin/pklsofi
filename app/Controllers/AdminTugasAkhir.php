@@ -2,29 +2,31 @@
 
 namespace App\Controllers;
 
-use App\Models\DuasarjanaModel;
+use App\Models\TugasakhirModel;
 
-
-class AdminDuasarjana extends BaseController
+class Tugasakhir extends BaseController
 {
-    
-    protected $duasarjana;
+
+    protected $tugasakhir;
 
     function __construct()
     {
-        $this->duasarjana = new DuasarjanaModel();
+        $this->tugasakhir = new TugasakhirModel();
     }
+
     public function index()
     {
-        return view('admin/admindusar', [
-            "title" => "Dua Sarjana Per Desa"
+        return view ('admin/admintugak', [
+            "title" => 'nama',
+            "tugasakhir" => $this->tugasakhir->findAll()
         ]);
     }
+
     public function detail($id_daftar)
     {
-        return view ('detailadmin/detaildusar', [
-            "title" => 'detail2',
-            "duasarjana" => $this->duasarjana->where('id_daftar',$id_daftar)->first()
+        return view ('detailadmin/detailtugak', [
+            "title" => 'detail3',
+            "tugasakhir" => $this->tugasakhir->where('id_daftar',$id_daftar)->first()
         ]);
     }
 

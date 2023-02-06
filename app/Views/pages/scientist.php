@@ -18,7 +18,11 @@
                 pada Perguruan Tinggi Negeri dengan jurusan dan program 
                 studi scientist. 
                 </p>
-                <a href= <?= base_url("/formscientist"); ?> class="btn btn-primary d-none d-lg-block">Daftar</a>
+                <?php if (in_groups('admin')) : ?>
+                    <a href="<?= base_url('/adminscientist') ?>" , class="btn btn-primary d-none d-lg-block">Admin</a>
+                <?php else : ?>
+                    <a href="<?= base_url('/formscientist') ?>" class="btn btn-primary d-none d-lg-block">Daftar</a>
+                <?php endif; ?>
             </div>
             <div class="col-lg-6 text-center text-lg-end">
                 <img class="img-fluid py-5" src="<?= base_url("img/scientist.svg"); ?>" alt="" />

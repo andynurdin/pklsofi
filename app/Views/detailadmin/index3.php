@@ -1,15 +1,8 @@
-<?= $this->extend('layout/template_d_user'); ?>
+<?= $this->extend('layout/template_d_admin'); ?>
 
 <?= $this->section('content'); ?>
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>post_test_2</title>
-    <style type = "text/css">
+<style type = "text/css">
         h1{
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             /* font-style: italic; */
@@ -121,11 +114,12 @@
         }  
     </style>
 </head>
-
 <body>
-    <form action="<?= base_url('form3/save')?>" method="post">
-        <br>
-        <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
+<hr />
+<table border=1>
+    
+        <h2 align="center">DATA PENDAFTARAN BEASISWA</h2>
+         <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
             <tr>
                 <td colspan="3" width="1100px" align="center"><h2><b>BEASISWA BANTUAN TUGAS AKHIR 2023</b></h2></td>
             </tr>
@@ -135,130 +129,124 @@
             <tr>
                 <td width="200px"><p>Nama Lengkap</p></td>
                 <td>:</td>
-                <td><input type="text" autofocus placeholder="Nama Lengkap" required name="namaku"></td>
-                
+                <td><?php echo $tugasakhir->nama;?></td>
             </tr>
             <tr>
                 <td width="200px"><p>Identitas Pribadi (NIK)</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="NIK" required name="nikku"></td>  
+                <td><?php echo $tugasakhir->nik;?></td>  
+            </tr>
+            <tr>
+                <td width="200px"><p>No.KK</p></td>
+                <td>:</td>
+                <td><?php echo$tugasakhir->kk;?></td>  
+            </tr>
+            <tr>
+                <td width="200px"><p>Tempat Lahir</p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->tempatLahir;?></td>
+            </tr>
+            <tr>
+                <td width="200px"><p>Tanggal Lahir</p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->tanggalLahir;?></td>
+            </tr>
+            <tr>
+                <td width="200px"><p>Jenis Kelamin</p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->gender;?></td>
+                
+            </tr>
+            <tr>
+                <td width="200px"><p>Agama</p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->agama;?></td>
+                
             </tr>
             <tr>
                 <td width="200px"><p>Alamat</p></td>
                 <td>:</td>
-                <td><textarea cols="39" rows="3" placeholder="Alamat" required name="alamatku"></textarea></td>
+                <td><?php echo $tugasakhir->alamat;?></td>
             </tr>
             <tr>
-                <td width="200px">
-                    <p>Kecamatan</p>
-                </td>
+                <td width="200px"><p>Kecamatan</p></td>
                 <td>:</td>
-                <td><select required name="kecamatanku">
-                        <option selected disabled align="center"> --- Pilih Kecamatan ---</option>
-                        <option>Balen</option>
-                        <option>Baureno</option>
-                        <option>Bojonegoro</option>
-                        <option>Bubulan</option>
-                        <option>Dander</option>
-                        <option>Gayam</option>
-                        <option>Gondang</option>
-                        <option>Kalitidu</option>
-                        <option>Kapas</option>
-                        <option>Kasiman</option>
-                        <option>Kadewan</option>
-                        <option>Kedungadem</option>
-                        <option>Kepohbaru</option>
-                        <option>Margomulyo</option>
-                        <option>Malo</option>
-                        <option>Ngambon</option>
-                        <option>Ngasem</option>
-                        <option>Ngraho</option>
-                        <option>Padangan</option>
-                        <option>Purwosari</option>
-                        <option>Sekar</option>
-                        <option>Sugihwaras</option>
-                        <option>Sukosewu</option>
-                        <option>Sumberejo</option>
-                        <option>Tambakrejo</option>
-                        <option>Temayang</option>
-                        <option>Trucuk</option>
-                    </select></td>
+                <td><?php echo $tugasakhir->kecamatan;?></td>
+            </tr>
+            <tr>
+                <td width="200px"><p>Email</p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->email;?></td>
             </tr>
             <tr>
                 <td width="200px"><p>No. Handphone</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="No. Handphone" required name="hpku"></td>
+                <td><?php echo $tugasakhir->noHP;?></td>
+            </tr>
+            <tr>
+                <td width="200px"><p>PasFoto (3x4) *pdf </p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->foto;?></td>
             </tr>
         </table>
-
+        
         <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
             <tr>
-                <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>KELUARGA</b></td>
+                <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>KELUARG</b></td>
             </tr>
             <tr>
-                <td width="200px">
-                    <p>No.KK</p>
-                </td>
+                <td width="200px"><p>No. KK</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="KK" required name="nokkku"></td>
+                <td><?php echo $tugasakhir->nokk;?></td>
             </tr>
             <tr>
-                <td width="200px">
-                    <p>Nama Kepala Keluarga</p>
-                </td>
+            <td width="200px"><p>Nama Kepala Keluarga</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="Nama Kepala Keluarga" required name="kepalakel"></td>
+                <td><?php echo $tugasakhir->kepalakel;?></td>
             </tr>
         </table>
-
         <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
             <tr>
                 <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>UNIVERSITAS</b></td>
-            </tr>    
+            </tr>
             <tr>
                 <td width="200px"><p>Nama Universitas</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="Nama Universitas" required name ="univku"></td>
+                <td><?php echo $tugasakhir->universitas;?></td>
             </tr>
             <tr>
-                <td width="200px">
-                    <p>Jenis Perguruan Tinggi</p>
-                </td>
+                <td width="200px"><p>Jenis Perguruan Tinggi</p></td>
                 <td>:</td>
-                <td><select required name="jenisptku">
-                        <option selected disabled align="center"> --- Pilih Jenis Perguruan Tinggi ---</option>
-                        <option>Perguruan Tinggi Negeri</option>
-                        <option>Perguruan Tinggi Swasta</option>
-                    </select></td>
+                <td><?php echo $tugasakhir->jenispt;?></td>
             </tr>
             <tr>
             <td width="200px"><p>NIM</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="NIM" required name ="nimku"></td>
+                <td><?php echo $tugasakhir->nim;?></td>
+            </tr>
+            <tr>
+            <td width="200px"><p>Tahun Masuk Kuliah</p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->tahun;?></td>
+            </tr>
+            <td width="200px"><p>Jalur Masuk Kuliah</p></td>
+                <td>:</td>
+                <td><?php echo $tugasakhir->jalur;?></td>
+            </tr>
             <tr>
             <td width="200px"><p>Fakultas</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="Fakultas" required name ="fkku"></td>
+                <td><?php echo $tugasakhir->fakultas;?></td>
             </tr>
             <td width="200px"><p>Program Studi</p></td>
                 <td>:</td>
-                <td><input type="text" placeholder="Prodi" required name ="prodiku"></td>
+                <td><?php echo $tugasakhir->prodi;?></td>
             </tr>
-            <tr>
-                <td width="200px">
-                    <p>Semester</p>
-                </td>
+            <td width="200px"><p>Semester</p></td>
                 <td>:</td>
-                <td><select required name="smsku">
-                        <option selected disabled align="center"> --- Pilih Semester ---</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                    </select></td>
+                <td><?php echo $tugasakhir->semester;?></td>
             </tr>
         </table>
-
         <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
             <tr>
                 <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>BERKAS</b></td>
@@ -266,61 +254,55 @@
             <tr>
                 <td width="200px"><p> Surat Permohonan Mendapatkan Beasiswa </p></td>
                 <td>:</td>
-                <td><input type="file" required name="supermohonku"></td>
+                <td><?php echo $tugasakhir->supermohon;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Surat Keterangan Aktif dari PTN / PTS Bojonegoro </p></td>
+                <td width="200px"><p> Surat Keterangan Aktif dari PTN / PTS Bojonegoro</p></td>
                 <td>:</td>
-                <td><input type="file" required name="suketaktifku"></td>
+                <td><?php echo $tugasakhir->suketaktifk;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Surat Keterangan sedang menyusun tugas akhir </p></td>
+                <td width="200px"><p> Surat Keterangan Sedang Menyusun Tugas Akhir</p></td>
                 <td>:</td>
-                <td><input type="file" required name="sukettaku"></td>
+                <td><?php echo $tugasakhir->suketta;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Kartu Tanda Mahasiswa (KTM) </p></td>
+                <td width="200px"><p> KTM</p></td>
                 <td>:</td>
-                <td><input type="file" required name="ktmku"></td>
+                <td><?php echo $tugasakhir->ktm;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Kartu Petani Mandiri (KPM) </p></td>
+                <td width="200px"><p> KPM</p></td>
                 <td>:</td>
-                <td><input type="file" required name="kpmku"></td>
+                <td><?php echo $tugasakhir->kpm;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Surat Keterangan Tidak Mampu (SKTM) </p></td>
+                <td width="200px"><p> SKTM</p></td>
                 <td>:</td>
-                <td><input type="file" required name="sktmku"></td>
+                <td><?php echo $tugasakhir->sktm;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Kartu Keluarga (KK) </p></td>
+                <td width="200px"><p> Kartu Keluarga </p></td>
                 <td>:</td>
-                <td><input type="file" required name="kkku"></td>
+                <td><?php echo $tugasakhir->kk;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Kartu Tanda Penduduk (KTP) </p></td>
+                <td width="200px"><p> KTP </p></td>
                 <td>:</td>
-                <td><input type="file" required name="ktpku"></td>
+                <td><?php echo $tugasakhir->ktp;?></td>
             </tr>
             <tr>
-                <td width="200px"><p> Surat Pernyataan Tidak Menerima Beasiswa </p></td>
+                <td width="200px"><p> Surat Pernyataan Tidak Menerima Beasiswa</p></td>
                 <td>:</td>
-                <td><input type="file" required name="supertidakbeasiswaku"></td>
+                <td><?php echo $tugasakhir->supertidakbeasiswa;?></td>
             </tr>
             <tr>
                 <td width="200px"><p> Buku Rekening Bank Jatim </p></td>
                 <td>:</td>
-                <td><input type="file" required name="rekeningku"></td>
+                <td><?php echo $tugasakhir->rekening;?></td>
             </tr>
-            <tr>
-                <td width="100px" align="right" colspan="3">
-                    <input type="submit">
-                </td>
-            </tr> 
         </table>
-    </form>
-</body>
-</html>
+</table>
 
+</body>
 <?= $this->endSection(); ?>
