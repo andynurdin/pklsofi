@@ -14,15 +14,19 @@
     <style>
         body {
             padding-top: 5rem;
+            background-image: url("img/wisuda.png"); /* The image used */
+            background-color: white; /* Used if the image is unavailable */
+            height: 700px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-size: cover;
         }
+        
     </style>
 
     <?= $this->renderSection('pageStyles') ?>
 </head>
 
 <body>
-
-
 <main role="main" class="container">
 	<?= $this->renderSection('main') ?>
 </main><!-- /.container -->

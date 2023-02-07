@@ -85,7 +85,7 @@
             padding-top: 5px;
             width: 100px;
             height: 50px;
-            background-color: #FFFFF;
+            background-color: #2980ef;
             font-family: sans-serif;
         }
         input[type=reset] {
@@ -117,20 +117,25 @@
             padding-left: 10px;
         }
         body {
-            background-color: #FFFFF;
+            background-color:#d3dfef;
         }  
     </style>
 </head>
 
 <body>
     <form action="<?= base_url('form3/save')?>" method="post">
-        <br>
-        <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
+    <table align="center" width=900px border="0" cellspacing="0" bgcolor="#2980fe">
+    <tr>
+        <td colspan="3" width="1100px" align="center"><h2><b>FORMULIR PENGAJUAN</b></h2></td>
+    </tr>
+    <tr>
+        <td colspan="3" width="1100px" align="center"><h2><b>BEASISWA BANTUAN TUGAS AKHIR 2023</b></h2></td>
+    </tr>
+    </table>
+        <table align="center" width=900px border="0" cellspacing="0" bgcolor=white>
+            <br>
             <tr>
-                <td colspan="3" width="1100px" align="center"><h2><b>BEASISWA BANTUAN TUGAS AKHIR 2023</b></h2></td>
-            </tr>
-            <tr>
-                <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>BIODATA</b></td>
+                <td width="200px" colspan="3" bgcolor="#2980fe">&nbsp&nbsp<b>BIODATA</b></td>
             </tr>
             <tr>
                 <td width="200px"><p>Nama Lengkap</p></td>
@@ -191,9 +196,10 @@
             </tr>
         </table>
 
-        <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
+        <table align="center" width=900px border="0" cellspacing="0" bgcolor=white>
+            <br>
             <tr>
-                <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>KELUARGA</b></td>
+                <td width="200px" colspan="3" bgcolor="#2980fe">&nbsp&nbsp<b>KELUARGA</b></td>
             </tr>
             <tr>
                 <td width="200px">
@@ -211,9 +217,10 @@
             </tr>
         </table>
 
-        <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
+        <table align="center" width=900px border="0" cellspacing="0" bgcolor=white>
+            <br>
             <tr>
-                <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>UNIVERSITAS</b></td>
+                <td width="200px" colspan="3" bgcolor="#2980fe">&nbsp&nbsp<b>UNIVERSITAS</b></td>
             </tr>    
             <tr>
                 <td width="200px"><p>Nama Universitas</p></td>
@@ -259,9 +266,10 @@
             </tr>
         </table>
 
-        <table align="center" width=1100px border="0" cellspacing="0" bgcolor="#F8F8FF">
+        <table align="center" width=900px border="0" cellspacing="0" bgcolor=white>
+            <br>
             <tr>
-                <td width="200px" colspan="3" bgcolor="#D6D2C4">&nbsp&nbsp<b>BERKAS</b></td>
+                <td width="200px" colspan="3" bgcolor="#2980fe">&nbsp&nbsp<b>BERKAS</b></td>
             </tr>
             <tr>
                 <td width="200px"><p> Surat Permohonan Mendapatkan Beasiswa </p></td>

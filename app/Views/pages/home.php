@@ -96,7 +96,7 @@
         <h5 class="mb-4 text-center">
             Tanggal penting jadwal pendaftaran dan penutupan Pengajuan Beasiswa Bojonegoro 2023
         </h5>
-        <table bgcolor="#D6D2C4" align="center">
+        <table bgcolor="#2980ef" align="center">
             <tr>
                 <td rowspan="2" width="350px" valign="top" align="middle">
                     <b>Nama Beasiswa</b>
@@ -166,14 +166,10 @@
                     <p>1 Januari 2023</p>
                 </td>
                 <td width="350px" valign="top" align="center">
-                    <p>1 Maret 2023</p>
-                </td>
-                <td width="350px" valign="top" align="center">
-                    <p>gatau kapan</p>
-                </td>
-                <td width="350px" valign="top" align="center">
                     <p>1 Agustus 2023</p>
                 </td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </div>
