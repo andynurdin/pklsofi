@@ -35,7 +35,9 @@ $routes->get('/adminduasarjana/index', 'AdminDuasarjana::index', ['filter' => 'r
 
 $routes->get('/adminscientist', 'AdminScientist::index', ['filter' => 'role:admin']);
 $routes->get('/admindusar', 'AdminScientist::index', ['filter' => 'role:admin']);
-$routes->get('/admintugak', 'AdminScientist::index', ['filter' => 'role:admin']);
+$routes->get('/admintugasakhir', 'AdminTugasAkhir::index', ['filter' => 'role:admin']);
+
+$routes->get('/detailscientist/detail/(:num)', 'AdminScientist::detail');
 
 $routes->get('/duasarjana', 'HomeDuasarjana::index');
 $routes->get('/scientist', 'HomeScientist::index');
@@ -45,6 +47,7 @@ $routes->get('/formscientist', 'Form::index');
 $routes->get('/formdusar', 'Form2::index');
 $routes->get('/formtugak', 'Form3::index');
 
+// $routes->get("scientist/detail/$row->id_daftar", 'AdminScientist::detail');
 // $routes->get('/save', 'Form::save');
 // $routes->get('/save2', 'Form2::save');
 // $routes->get('/save3', 'Form3::save');

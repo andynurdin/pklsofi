@@ -25,7 +25,7 @@
         <td><?= $row->prodi; ?></td>
         <td><?= $row->noHP; ?></td>
         <td>
-          <a title="Detail" href="<?= base_url("adminscientist/detail/$row->id_daftar"); ?>" class="btn btn-success">Detail</a>
+          <a title="Detail" href="<?= base_url("/detailscientist/detail/$row->id_daftar"); ?>" class="btn btn-success">Detail</a>
         </td>
         <td><?= $row->catatan; ?></td>
         <td>

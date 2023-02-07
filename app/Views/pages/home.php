@@ -20,7 +20,7 @@
                     untuk para Sarjana Kembali dibuka.
                 </p>
                 <?php if (in_groups('admin')) : ?>
-                    <a href="<?= base_url('/admin') ?>" , class="btn btn-primary d-none d-lg-block">Admin</a>
+                    <a href="<?= base_url('/adminscientist') ?>" , class="btn btn-primary d-none d-lg-block">Admin</a>
                 <?php else : ?>
                     <a href="<?= base_url('/login') ?>" class="btn btn-primary d-none d-lg-block">Daftar</a>
                 <?php endif; ?>
